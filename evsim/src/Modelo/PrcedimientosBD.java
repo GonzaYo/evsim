@@ -138,6 +138,34 @@ public class PrcedimientosBD {
             System.out.println(e);
        }
     }
+    
+    public int NoVehoculosPorAnio(String Anio) throws Exception{
+        int Cantidad = 10000;
+        //este prcedimiento sirve para exportarlos datos de java al excel C://Users//alez//Dropbox//TPI//evsimDatosJAVA.csv
+      try { 
+            conn = ConexionMySQL.conectar();
+            conn.setAutoCommit(true);
+       
+            // se crea instancia a procedimiento, los parametros de entrada y salida se simbolizan con el signo ?
+            CallableStatement proc = conn.prepareCall(" {CALL NoVehiculoPorAnio(?,?)} ");
+            //se cargan los parametros de entrada
+            proc.setString("vanio", Anio);
+            
+
+            // parametros de salida
+            proc.registerOutParameter("vCantidadEV", Types.INTEGER);
+            // Se ejecuta el procedimiento almacenado
+            proc.execute();            
+            // devuelve el valor del parametro de salida del procedimiento
+            Cantidad = proc.getInt("vCantidadEV");
+            conn.close();
+            
+        } 
+       catch (Exception e) {                  
+            System.out.println(e);
+       }
+         return Cantidad;
+    }
 }
 
 /*

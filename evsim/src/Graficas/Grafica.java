@@ -12,7 +12,7 @@ import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.general.DefaultPieDataset;
 import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
-import vista.Panel_Principal_1;
+import Vista.Panel_Principal_1;
 
 public class Grafica
 {
