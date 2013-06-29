@@ -1143,7 +1143,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         ProcedimientosMAtlab procedimientosMAtlab = new ProcedimientosMAtlab();
-       procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 1, 0, 1922.0);
+       procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 1, 0, Double.valueOf(jTextField1.getText()));
         System.out.println(System.getProperty("user.dir")+"/Matlab");
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton6ActionPerformed
