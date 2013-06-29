@@ -5,12 +5,12 @@
 package Vista;
 
 import Controlador.Usuario;
-import com.mathworks.toolbox.javabuilder.*;
+
 
 import Modelo.PrcedimientosBD;
 import Graficas.Grafica;
 import Controlador.ProcedimientosMAtlab;
-import org.math.plot.*;
+
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -150,12 +150,11 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Evsim");
-        setAutoRequestFocus(false);
         setBackground(new java.awt.Color(255, 255, 255));
         setBounds(new java.awt.Rectangle(0, 0, 0, 0));
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
-        setEnabled(false);
         setFocusTraversalPolicyProvider(true);
         setForeground(java.awt.Color.white);
         setMaximizedBounds(new java.awt.Rectangle(100, 100, 100, 100));
