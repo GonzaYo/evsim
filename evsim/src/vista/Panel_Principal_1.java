@@ -6,10 +6,7 @@ package Vista;
 
 import Controlador.Usuario;
 import com.mathworks.toolbox.javabuilder.*;
-import prueba7.Pueba7; 
-import prueba8Proyecto.Prueba8Class;
-import Prueba10Proyect.Prueba10CLass;
-import mTeste.mTESTEClass; 
+
 import Modelo.PrcedimientosBD;
 import Graficas.Grafica;
 import Controlador.ProcedimientosMAtlab;
@@ -517,7 +514,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                                 .addComponent(jSlider3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(5, 5, 5)
                                 .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
             .addGroup(jPanel9Layout.createSequentialGroup()
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(jSeparator1, javax.swing.GroupLayout.Alignment.LEADING)
