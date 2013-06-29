@@ -908,7 +908,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         procedimientosMAtlab.writeExcel(System.getProperty("user.dir") + "/Vehiculos.xls", "Entrada", 1, 1, Double.valueOf(Esenario_ImpactoAmb.getSelectedIndex())+1.0);
         //procedimientosMAtlab.writeExcel(System.getProperty("user.dir") + "/Vehiculos.xls", "Entrada", 1, 1, Double.valueOf(Gasolina_ImpactoAmb.getSelectedIndex())+1.0);
         try {
-            procedimientosMAtlab.prcedimiento0var(System.getProperty("user.dir")+"/MainMatlab.exe");    
+            procedimientosMAtlab.prcedimiento0var(System.getProperty("user.dir")+"/Probabilidad.exe");    
             
         } catch (IOException ex) {
             Logger.getLogger(Panel_Principal_1.class.getName()).log(Level.SEVERE, null, ex);
