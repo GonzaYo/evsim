@@ -886,63 +886,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // boton para graficar
       
-        int SumaEstratos = (Integer.parseInt(jTextField6.getText()))+ (Integer.parseInt(jTextField7.getText()))+ (Integer.parseInt(jTextField8.getText()))+ (Integer.parseInt(jTextField9.getText()))+ (Integer.parseInt(jTextField10.getText()));     
-        Usuario Estrato1 = new Usuario(Integer.parseInt(jTextField6.getText()),SumaEstratos);
-        Usuario Estrato2 = new Usuario(Integer.parseInt(jTextField7.getText()),SumaEstratos);
-        Usuario Estrato3 = new Usuario(Integer.parseInt(jTextField8.getText()),SumaEstratos);
-        Usuario Estrato4 = new Usuario(Integer.parseInt(jTextField9.getText()),SumaEstratos);
-        Usuario Estrato5 = new Usuario(Integer.parseInt(jTextField10.getText()),SumaEstratos);
 
-        String VectorGraficax[] = {
-            Integer.toString(Estrato1.PorcentajeEst)+"% E1",
-            Integer.toString(Estrato2.PorcentajeEst)+"% E2",
-            Integer.toString(Estrato3.PorcentajeEst)+"% E3",
-            Integer.toString(Estrato4.PorcentajeEst)+"% E4",
-            Integer.toString(Estrato5.PorcentajeEst)+"% E5"};
-        int VectorGrafica[] =  {
-            Estrato1.PorcentajeEst,
-            Estrato2.PorcentajeEst,
-            Estrato3.PorcentajeEst,
-            Estrato4.PorcentajeEst,
-            Estrato5.PorcentajeEst};
-        int VectorUsuarios [] = {
-           Estrato1.UsuarioEstrato,
-           Estrato2.UsuarioEstrato,
-           Estrato3.UsuarioEstrato,
-           Estrato4.UsuarioEstrato,
-           Estrato5.UsuarioEstrato};
-        System.out.print("\t"+VectorGrafica[0]+"----"+VectorGraficax[0]+"----Descripcion"+VectorUsuarios[0]+"\n");
-        Grafica Torta = new Grafica(VectorGrafica, VectorGraficax, "Masificación por Estratos",VectorUsuarios);
-        System.out.print("\t"+VectorGrafica[0]+"----"+VectorGraficax[0]+"----Descripcion"+VectorUsuarios[0]+"\n");
-        jPanel1.setLayout(new java.awt.BorderLayout());
-        jPanel3.setLayout(new java.awt.BorderLayout());
-        jPanel4.setLayout(new java.awt.BorderLayout());
-        jPanel5.setLayout(new java.awt.BorderLayout());
-         
-        ChartPanel CP = new ChartPanel(Torta.GraficarLinea());
-        ChartPanel CP1 = new ChartPanel(Torta.GraficarLinea());
-        ChartPanel CP2 = new ChartPanel(Torta.GraficarTorta());
-        ChartPanel CP3 = new ChartPanel(Torta.GraficarTorta());
-        CP.setVisible(true);
-        CP.repaint();
-        //jPanel1.repaint();
-        //ChartPanel CP1 = new ChartPanel(Torta.GraficarLinea1());
-       // BufferedImage CP2 = Torta.GraficarLinea1()
-        
-        //CP2.getGraphics();
-        
-        jPanel1.add(CP,BorderLayout.CENTER);
-        jPanel3.add(CP1,BorderLayout.CENTER);
-        jPanel4.add(CP2,BorderLayout.CENTER);
-        jPanel5.add(CP3,BorderLayout.CENTER);
-        
-        
-        //jPanel1.add(CP2,BorderLayout.CENTER);
-        jPanel1.validate();
-        jPanel3.validate();
-        jPanel4.validate();
-        jPanel5.validate();
-        
         
         
                 
@@ -1043,50 +987,8 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         ProcedimientosMAtlab procedimientosMAtlab = new ProcedimientosMAtlab();
         System.out.println(System.getProperty("user.dir")+"/src/Matlab/");
         try {
-            procedimientosMAtlab.prcedimiento0var(System.getProperty("user.dir")+"/src/Matlab/MainMatlab.exe");    
-            //procedimientosMAtlab.prcedimiento0var("C:/Users/alez/Dropbox/TPI/evsim/src/Matlab/MainMatlab/distrib/MainMatlab.exe");   
+            procedimientosMAtlab.prcedimiento0var(System.getProperty("user.dir")+"/MainMatlab.exe");    
             
-           
-            
-            
-            
-            
-            /*Plot2DPanel plot = new Plot2DPanel();
-            Runtime r = Runtime.getRuntime();
-            Process p =null;
-            try {
-                r.exec("C://Users/alez/Documents/Proyectos TPI/prueba13/distrib/prueba13.exe");
-                
-            
-            
-            /*
-            
-            try {
-                Prueba10CLass grafica = new Prueba10CLass();
-                grafica.grafica(1);
-                grafica.waitForFigures();
-                plot.add(plot, grafica, WIDTH);
-                JFrame frame = new JFrame("a plot panel");
-                frame.setContentPane(plot);
-                frame.setVisible(true);
-                     
-                      
-                if(grafica != null){ ;
-                    grafica.dispose();
-                }
-                
-                //jopas.Execute("x=-2:0.3:2");
-                //jopas.Execute("y=(-x.*x)");
-                // TODO add your handling code here:
-                // TODO add your handling code here:
-            } catch (MWException ex) {
-                Logger.getLogger(Panel_Principal_1.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            * waitForFigures()
-            
-            } catch (IOException ex) {
-                Logger.getLogger(Panel_Principal_1.class.getName()).log(Level.SEVERE, null, ex);
-            }*/
         } catch (IOException ex) {
             Logger.getLogger(Panel_Principal_1.class.getName()).log(Level.SEVERE, null, ex);
         }
