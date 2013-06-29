@@ -27,6 +27,7 @@ import jxl.write.WritableWorkbook;
  * @author alez
  */
 public class ProcedimientosMAtlab {
+//Funcion que invoca el ejecutable de matlab 
     public void prcedimiento0var(String ruta) throws IOException{
         
         Runtime r = Runtime.getRuntime();
@@ -42,6 +43,7 @@ public class ProcedimientosMAtlab {
         this.writeExcel(System.getProperty("user.dir")+"/src/Matlab/Libro2.xls", "Hoja1", 1, 1, 10.12);
         
     }
+//Funcion  que envia los Double a excel     
     public void writeExcel(String excel_file, String sheet_name, int row, int column, Double value)
     {
         String cellData = new String();
@@ -60,8 +62,25 @@ public class ProcedimientosMAtlab {
             System.out.println("writeExcel ->"+e);
         }
     }
-
-  
+//Funcion  que envia datos string a excel 
+      public void writeExcelString(String excel_file, String sheet_name, int row, int column, String value)
+    {
+        
+        try{
+            Workbook target_workbook = Workbook.getWorkbook(new File(excel_file));
+            WritableWorkbook workbook = Workbook.createWorkbook(new File(excel_file), target_workbook);
+            target_workbook.close();
+            WritableSheet sheet = workbook.getSheet(sheet_name);
+            jxl.write.Label number = new jxl.write.Label(column, row, value);
+            sheet.addCell(number);
+            workbook.write();
+            workbook.close();
+        }
+        catch(Exception e)
+        {
+            System.out.println("writeExcel ->"+e);
+        }
+    }
 
 
 

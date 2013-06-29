@@ -59,29 +59,29 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         jPanel4 = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
-        jCheckBox8 = new javax.swing.JCheckBox();
-        jCheckBox9 = new javax.swing.JCheckBox();
+        ConsumoE = new javax.swing.JCheckBox();
+        ImpactoCurva = new javax.swing.JCheckBox();
         jLabel19 = new javax.swing.JLabel();
         jPanel9 = new javax.swing.JPanel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
-        jComboBox4 = new javax.swing.JComboBox();
+        TiposEV_PHEV = new javax.swing.JComboBox();
         jLabel10 = new javax.swing.JLabel();
-        jComboBox5 = new javax.swing.JComboBox();
+        TiposEV_BEV = new javax.swing.JComboBox();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
-        jComboBox6 = new javax.swing.JComboBox();
+        TiposEV_HEV = new javax.swing.JComboBox();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
-        jComboBox7 = new javax.swing.JComboBox();
-        jComboBox8 = new javax.swing.JComboBox();
-        jComboBox9 = new javax.swing.JComboBox();
+        TiposUSR_PHEV = new javax.swing.JComboBox();
+        TiposUSR_BEV = new javax.swing.JComboBox();
+        TiposUSR_HEV = new javax.swing.JComboBox();
         jLabel18 = new javax.swing.JLabel();
-        jComboBox10 = new javax.swing.JComboBox();
-        jComboBox11 = new javax.swing.JComboBox();
-        jComboBox12 = new javax.swing.JComboBox();
+        Cantidad_PHEV = new javax.swing.JComboBox();
+        Cantidad_BEV = new javax.swing.JComboBox();
+        Cantidad_HEV = new javax.swing.JComboBox();
         jSeparator1 = new javax.swing.JSeparator();
         jTextField1 = new javax.swing.JTextField();
         jSlider3 = new javax.swing.JSlider();
@@ -100,11 +100,11 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jPanel8 = new javax.swing.JPanel();
-        jComboBox13 = new javax.swing.JComboBox();
+        Esenario_ImpactoAmb = new javax.swing.JComboBox();
         jLabel4 = new javax.swing.JLabel();
         jSlider4 = new javax.swing.JSlider();
-        jTextField14 = new javax.swing.JTextField();
-        jButton7 = new javax.swing.JButton();
+        Tiempo_ImpactoAmb = new javax.swing.JTextField();
+        BottonImpactoAmb = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -190,19 +190,19 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         jPanel13.setBackground(new java.awt.Color(255, 255, 255));
         jPanel13.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jCheckBox8.setBackground(new java.awt.Color(255, 255, 255));
-        jCheckBox8.setText("CONSUMO DE ENERGIA (KWH)POR TECNOLOGIA");
-        jCheckBox8.addActionListener(new java.awt.event.ActionListener() {
+        ConsumoE.setBackground(new java.awt.Color(255, 255, 255));
+        ConsumoE.setText("CONSUMO DE ENERGIA (KWH)POR TECNOLOGIA");
+        ConsumoE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox8ActionPerformed(evt);
+                ConsumoEActionPerformed(evt);
             }
         });
 
-        jCheckBox9.setBackground(new java.awt.Color(255, 255, 255));
-        jCheckBox9.setText("IMPACTO EN LA CURVA DE CARGA - BARRIO  \"LOS CEDRITOS\"");
-        jCheckBox9.addActionListener(new java.awt.event.ActionListener() {
+        ImpactoCurva.setBackground(new java.awt.Color(255, 255, 255));
+        ImpactoCurva.setText("IMPACTO EN LA CURVA DE CARGA - BARRIO  \"LOS CEDRITOS\"");
+        ImpactoCurva.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox9ActionPerformed(evt);
+                ImpactoCurvaActionPerformed(evt);
             }
         });
 
@@ -215,8 +215,8 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
             .addGroup(jPanel13Layout.createSequentialGroup()
                 .addGap(21, 21, 21)
                 .addGroup(jPanel13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jCheckBox9)
-                    .addComponent(jCheckBox8))
+                    .addComponent(ImpactoCurva)
+                    .addComponent(ConsumoE))
                 .addContainerGap())
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel13Layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
@@ -228,9 +228,9 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel19)
                 .addGap(18, 18, 18)
-                .addComponent(jCheckBox8)
+                .addComponent(ConsumoE)
                 .addGap(7, 7, 7)
-                .addComponent(jCheckBox9)
+                .addComponent(ImpactoCurva)
                 .addContainerGap(17, Short.MAX_VALUE))
         );
 
@@ -247,35 +247,35 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
 
         jPanel10.setBackground(new java.awt.Color(255, 255, 255));
 
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Chevrolet", "Toyota", "Fiat" }));
+        TiposEV_PHEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Chevrolet", "Toyota", "Fiat" }));
 
         jLabel10.setText("PHEV");
 
-        jComboBox5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nissan", "Renault", "Fiat" }));
+        TiposEV_BEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nissan", "Renault", "Fiat" }));
 
         jLabel11.setText("BEV");
 
         jLabel12.setText("HEV");
 
-        jComboBox6.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Honda", "Toyota", "Ford" }));
+        TiposEV_HEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Honda", "Toyota", "Ford" }));
 
         jLabel13.setText("TIPOS DE EV");
 
         jLabel14.setText("TIPOS DE USUARIO");
 
-        jComboBox7.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ama de casa", "Estudiante" }));
+        TiposUSR_PHEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ama de casa", "Estudiante" }));
 
-        jComboBox8.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ama de casa", "Estudiante" }));
+        TiposUSR_BEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ama de casa", "Estudiante" }));
 
-        jComboBox9.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ama de casa", "Estudiante" }));
+        TiposUSR_HEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ama de casa", "Estudiante" }));
 
         jLabel18.setText("CANTIDAD");
 
-        jComboBox10.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "0" }));
+        Cantidad_PHEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "0" }));
 
-        jComboBox11.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "0" }));
+        Cantidad_BEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "0" }));
 
-        jComboBox12.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "0" }));
+        Cantidad_HEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "0" }));
 
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
@@ -291,9 +291,9 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                             .addComponent(jLabel11))
                         .addGap(18, 18, 18)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jComboBox4, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jComboBox5, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jComboBox6, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(TiposEV_PHEV, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(TiposEV_BEV, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(TiposEV_HEV, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel13)
@@ -305,15 +305,15 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGap(40, 40, 40)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(TiposUSR_HEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TiposUSR_BEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TiposUSR_PHEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jComboBox10, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Cantidad_PHEV, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel18, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jComboBox11, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox12, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Cantidad_BEV, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Cantidad_HEV, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(36, 36, 36))
         );
         jPanel10Layout.setVerticalGroup(
@@ -326,23 +326,23 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                     .addComponent(jLabel18))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TiposEV_PHEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel10)
-                    .addComponent(jComboBox7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TiposUSR_PHEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Cantidad_PHEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(TiposEV_BEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel11)
-                    .addComponent(jComboBox8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jComboBox11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(TiposUSR_BEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Cantidad_BEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel12)
                     .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jComboBox6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jComboBox9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jComboBox12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(TiposEV_HEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(TiposUSR_HEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Cantidad_HEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(39, Short.MAX_VALUE))
         );
 
@@ -533,7 +533,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         jPanel8.setBackground(new java.awt.Color(255, 255, 255));
         jPanel8.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
-        jComboBox13.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Alta", "Media", "Baja" }));
+        Esenario_ImpactoAmb.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Alta", "Media", "Baja" }));
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/TendenciaCrecimiento.png"))); // NOI18N
 
@@ -553,17 +553,17 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
             }
         });
 
-        jTextField14.setText("2014");
-        jTextField14.addActionListener(new java.awt.event.ActionListener() {
+        Tiempo_ImpactoAmb.setText("2014");
+        Tiempo_ImpactoAmb.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField14ActionPerformed(evt);
+                Tiempo_ImpactoAmbActionPerformed(evt);
             }
         });
 
-        jButton7.setText("GENERAR SIMULACIÓN");
-        jButton7.addActionListener(new java.awt.event.ActionListener() {
+        BottonImpactoAmb.setText("GENERAR SIMULACIÓN");
+        BottonImpactoAmb.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton7ActionPerformed(evt);
+                BottonImpactoAmbActionPerformed(evt);
             }
         });
 
@@ -583,13 +583,13 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
                                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addGroup(jPanel8Layout.createSequentialGroup()
-                                        .addComponent(jComboBox13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(Esenario_ImpactoAmb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(Tiempo_ImpactoAmb, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(jSlider4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(22, 22, 22))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
-                                .addComponent(jButton7)
+                                .addComponent(BottonImpactoAmb)
                                 .addGap(47, 47, 47))))))
         );
         jPanel8Layout.setVerticalGroup(
@@ -601,10 +601,10 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                 .addComponent(jSlider4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jTextField14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Esenario_ImpactoAmb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Tiempo_ImpactoAmb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jButton7)
+                .addComponent(BottonImpactoAmb)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -759,9 +759,9 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                 
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void jCheckBox9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox9ActionPerformed
+    private void ImpactoCurvaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImpactoCurvaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox9ActionPerformed
+    }//GEN-LAST:event_ImpactoCurvaActionPerformed
 
     private void jSlider3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider3StateChanged
         try {
@@ -795,13 +795,38 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
        
         ProcedimientosMAtlab procedimientosMAtlab = new ProcedimientosMAtlab();
-        System.out.println(System.getProperty("user.dir")+"/src/Matlab/");
-        try {
-            procedimientosMAtlab.prcedimiento0var(System.getProperty("user.dir")+"/MainMatlab.exe");    
-            
-        } catch (IOException ex) {
-            Logger.getLogger(Panel_Principal_1.class.getName()).log(Level.SEVERE, null, ex);
+        //Tipos de EV
+        procedimientosMAtlab.writeExcelString(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 5, 1, TiposEV_PHEV.getSelectedItem().toString());
+        procedimientosMAtlab.writeExcelString(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 6, 1, TiposEV_BEV.getSelectedItem().toString());
+        procedimientosMAtlab.writeExcelString(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 7, 1, TiposEV_HEV.getSelectedItem().toString());
+        //Tipos de Usuario
+        procedimientosMAtlab.writeExcelString(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 5, 2, TiposUSR_PHEV.getSelectedItem().toString());
+        procedimientosMAtlab.writeExcelString(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 6, 2, TiposUSR_BEV.getSelectedItem().toString());
+        procedimientosMAtlab.writeExcelString(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 7, 2, TiposUSR_HEV.getSelectedItem().toString());
+        //Cantidad por usuario y vehiculo
+        procedimientosMAtlab.writeExcelString(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 5, 3, Cantidad_PHEV.getSelectedItem().toString());
+        procedimientosMAtlab.writeExcelString(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 6, 3, Cantidad_BEV.getSelectedItem().toString());
+        procedimientosMAtlab.writeExcelString(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 7, 3, Cantidad_HEV.getSelectedItem().toString());
+        //variable de la salida
+        if(ConsumoE.isSelected()==true){
+            procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 9, 1, 1.0);
+            }
+        else{
+            procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 9, 1, 0.0);
         }
+        if(ImpactoCurva.isSelected()==true){
+            procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 10, 1, 1.0);
+            }
+        else{
+            procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 10, 1, 0.0);
+        }
+       
+//        try {
+//            procedimientosMAtlab.prcedimiento0var(System.getProperty("user.dir")+"/MainMatlab.exe");    
+//            
+//        } catch (IOException ex) {
+//            Logger.getLogger(Panel_Principal_1.class.getName()).log(Level.SEVERE, null, ex);
+//        }
         
         
     }//GEN-LAST:event_jButton4ActionPerformed
@@ -826,13 +851,13 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
        jTextField13.setText(CantidadMax); 
        int cantidad;
         cantidad=jSlider2.getValue();
-        jComboBox10.removeAllItems();
-        jComboBox11.removeAllItems();
-        jComboBox12.removeAllItems();
+        Cantidad_PHEV.removeAllItems();
+        Cantidad_BEV.removeAllItems();
+        Cantidad_HEV.removeAllItems();
         for ( int i=0;i <=cantidad;i=i+1){
-                jComboBox10.addItem(Integer.toString(i));
-                jComboBox11.addItem(Integer.toString(i));
-                jComboBox12.addItem(Integer.toString(i));
+                Cantidad_PHEV.addItem(Integer.toString(i));
+                Cantidad_BEV.addItem(Integer.toString(i));
+                Cantidad_HEV.addItem(Integer.toString(i));
            }
         // TODO add your handling code here:
     }//GEN-LAST:event_jSlider2StateChanged
@@ -844,24 +869,55 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton6ActionPerformed
 
-    private void jCheckBox8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox8ActionPerformed
+    private void ConsumoEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConsumoEActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jCheckBox8ActionPerformed
+    }//GEN-LAST:event_ConsumoEActionPerformed
 
     private void jSlider4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider4StateChanged
+
+        try {
+            
+            String anio =Integer.toString(jSlider4.getValue());
+            Tiempo_ImpactoAmb.setText(anio);
+            
+             int i ,cantidad, m;
+             m = Integer.parseInt(Tiempo_ImpactoAmb.getText());
+             int[] j = {100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121};
+             
+             cantidad =j[10];
+             String anio1 =Integer.toString(m);
+            Tiempo_ImpactoAmb.setText(anio1);
+            //PrcedimientosBD damecantidad = new PrcedimientosBD();
+            //cantidad=damecantidad.NoVehoculosPorAnio(jTextField1.getText());
+           
+            
+            // TODO add your handling code here:
+        } catch (Exception ex) {
+            Logger.getLogger(Panel_Principal_1.class.getName()).log(Level.SEVERE, null, ex);
+        }
         // TODO add your handling code here:
     }//GEN-LAST:event_jSlider4StateChanged
 
-    private void jTextField14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField14ActionPerformed
+    private void Tiempo_ImpactoAmbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Tiempo_ImpactoAmbActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField14ActionPerformed
+    }//GEN-LAST:event_Tiempo_ImpactoAmbActionPerformed
 
-    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+    private void BottonImpactoAmbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BottonImpactoAmbActionPerformed
         ProcedimientosMAtlab procedimientosMAtlab = new ProcedimientosMAtlab();
-        procedimientosMAtlab.writeExcel(System.getProperty("user.dir") + "/Vehiculos.xls", "Entrada", 1, 0, Double.valueOf(jTextField1.getText()));
-        System.out.println(System.getProperty("user.dir") + "/Matlab");
+        procedimientosMAtlab.writeExcel(System.getProperty("user.dir") + "/Vehiculos.xls", "Entrada", 1, 0, Double.valueOf(Tiempo_ImpactoAmb.getText()));
+        procedimientosMAtlab.writeExcel(System.getProperty("user.dir") + "/Vehiculos.xls", "Entrada", 1, 1, Double.valueOf(Esenario_ImpactoAmb.getSelectedIndex())+1.0);
+        //procedimientosMAtlab.writeExcel(System.getProperty("user.dir") + "/Vehiculos.xls", "Entrada", 1, 1, Double.valueOf(Gasolina_ImpactoAmb.getSelectedIndex())+1.0);
+        try {
+            procedimientosMAtlab.prcedimiento0var(System.getProperty("user.dir")+"/MainMatlab.exe");    
+            
+        } catch (IOException ex) {
+            Logger.getLogger(Panel_Principal_1.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        
+        //System.out.println(System.getProperty("user.dir") + "/Matlab");
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton7ActionPerformed
+    }//GEN-LAST:event_BottonImpactoAmbActionPerformed
 
     /**
      * @param args the command line arguments
@@ -904,23 +960,24 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
     private List array_dinamico;
     public javax.swing.JPanel jPanel2;
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton BottonImpactoAmb;
+    private javax.swing.JComboBox Cantidad_BEV;
+    private javax.swing.JComboBox Cantidad_HEV;
+    private javax.swing.JComboBox Cantidad_PHEV;
+    private javax.swing.JCheckBox ConsumoE;
+    private javax.swing.JComboBox Esenario_ImpactoAmb;
+    private javax.swing.JCheckBox ImpactoCurva;
+    private javax.swing.JTextField Tiempo_ImpactoAmb;
+    private javax.swing.JComboBox TiposEV_BEV;
+    private javax.swing.JComboBox TiposEV_HEV;
+    private javax.swing.JComboBox TiposEV_PHEV;
+    private javax.swing.JComboBox TiposUSR_BEV;
+    private javax.swing.JComboBox TiposUSR_HEV;
+    private javax.swing.JComboBox TiposUSR_PHEV;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JCheckBox jCheckBox8;
-    private javax.swing.JCheckBox jCheckBox9;
     private javax.swing.JCheckBox jCheckBox_CasoSimular;
-    private javax.swing.JComboBox jComboBox10;
-    private javax.swing.JComboBox jComboBox11;
-    private javax.swing.JComboBox jComboBox12;
-    private javax.swing.JComboBox jComboBox13;
-    private javax.swing.JComboBox jComboBox4;
-    private javax.swing.JComboBox jComboBox5;
-    private javax.swing.JComboBox jComboBox6;
-    private javax.swing.JComboBox jComboBox7;
-    private javax.swing.JComboBox jComboBox8;
-    private javax.swing.JComboBox jComboBox9;
     private javax.swing.JFileChooser jFileChooser2;
     private javax.swing.JFrame jFrame2;
     private javax.swing.JLabel jLabel1;
@@ -961,7 +1018,6 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
     private javax.swing.JSlider jSlider4;
     private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField14;
     private javax.swing.JTextField jTextField2;
     // End of variables declaration//GEN-END:variables
 
