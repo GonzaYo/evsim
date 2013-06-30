@@ -88,12 +88,6 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         jSlider2_CantidadVehiculos = new javax.swing.JSlider();
         jTextField13_CantidadVehiculos = new javax.swing.JTextField();
         jButton4_GraficarMatlab = new javax.swing.JButton();
-        jPanel14 = new javax.swing.JPanel();
-        jLabel15 = new javax.swing.JLabel();
-        jTextField2_Emisiones = new javax.swing.JTextField();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
         jPanel6 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
         jCheckBox_CasoSimular = new javax.swing.JCheckBox();
@@ -110,6 +104,12 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         TiposEV_HEV = new javax.swing.JComboBox();
         TiposUSR_HEV = new javax.swing.JComboBox();
         jLabel12 = new javax.swing.JLabel();
+        jPanel14 = new javax.swing.JPanel();
+        jLabel15 = new javax.swing.JLabel();
+        jTextField2_Emisiones = new javax.swing.JTextField();
+        jLabel16 = new javax.swing.JLabel();
+        jLabel17 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -254,7 +254,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
 
         jPanel10.setBackground(new java.awt.Color(255, 255, 255));
 
-        TiposEV_PHEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Chevrolet", "Toyota", "Fiat" }));
+        TiposEV_PHEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Toyota", "Chevi" }));
 
         jLabel10.setText("PHEV");
 
@@ -272,17 +272,17 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
 
         Cantidad_BEV1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "0" }));
 
-        TiposEV_PHEV1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Chevrolet", "Toyota", "Fiat" }));
+        TiposEV_PHEV1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Toyota", "Chevi" }));
 
-        TiposEV_BEV1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nissan", "Renault", "Fiat" }));
+        TiposEV_BEV1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nissan", "Renault" }));
 
         jLabel14.setText("TIPOS DE USUARIO");
 
-        TiposUSR_PHEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ama de casa", "Estudiante" }));
+        TiposUSR_PHEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Trabajador Normal", "Trabajador 12 horas", "Ama de  Casa", "Trabajador2 Jornadas", "Trabajador de  Noche" }));
 
-        TiposUSR_BEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ama de casa", "Estudiante" }));
+        TiposUSR_BEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Trabajador Normal", "Trabajador 12 horas", "Ama de  Casa", "Trabajador2 Jornadas", "Trabajador de  Noche" }));
 
-        TiposEV_BEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nissan", "Renault", "Fiat" }));
+        TiposEV_BEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nissan", "Renault" }));
         TiposEV_BEV.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TiposEV_BEVActionPerformed(evt);
@@ -305,13 +305,11 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                             .addComponent(jLabel10)
                             .addComponent(jLabel11))
                         .addGap(18, 18, 18)
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(TiposEV_PHEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(TiposEV_PHEV1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(TiposEV_BEV1, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addComponent(TiposEV_BEV, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(TiposEV_PHEV1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(TiposEV_BEV1, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(TiposEV_BEV, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(TiposEV_PHEV, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(52, 52, 52)))
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel18)
@@ -322,12 +320,17 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                             .addComponent(Cantidad_BEV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Cantidad_PHEV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(Cantidad_BEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(TiposUSR_BEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TiposUSR_PHEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel14))
-                .addGap(33, 33, 33))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                        .addComponent(TiposUSR_PHEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                        .addComponent(TiposUSR_BEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                        .addComponent(jLabel14)
+                        .addGap(54, 54, 54))))
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -337,7 +340,8 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel13)
-                            .addComponent(jLabel18))
+                            .addComponent(jLabel18)
+                            .addComponent(jLabel14))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(TiposEV_PHEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -361,12 +365,11 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                                 .addComponent(Cantidad_BEV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap())
                     .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addComponent(jLabel14)
-                        .addGap(26, 26, 26)
+                        .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(TiposUSR_PHEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(29, 29, 29)
                         .addComponent(TiposUSR_BEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30))))
+                        .addGap(27, 27, 27))))
         );
 
         jTextField1_anioSimular.setText("2014");
@@ -459,62 +462,6 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                 jButton4_GraficarMatlabActionPerformed(evt);
             }
         });
-
-        jPanel14.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel14.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        jLabel15.setText("EMISIONES");
-
-        jTextField2_Emisiones.setText("0");
-
-        jLabel16.setText("EV SIMULADOS");
-
-        jLabel17.setText("VC TIPO SPARK GT");
-
-        jButton6.setText("jButton6");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
-        jPanel14.setLayout(jPanel14Layout);
-        jPanel14Layout.setHorizontalGroup(
-            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel14Layout.createSequentialGroup()
-                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel14Layout.createSequentialGroup()
-                        .addGap(65, 65, 65)
-                        .addComponent(jLabel15))
-                    .addGroup(jPanel14Layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jTextField2_Emisiones, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel17))
-                    .addGroup(jPanel14Layout.createSequentialGroup()
-                        .addGap(100, 100, 100)
-                        .addComponent(jLabel16))
-                    .addGroup(jPanel14Layout.createSequentialGroup()
-                        .addGap(73, 73, 73)
-                        .addComponent(jButton6)))
-                .addContainerGap(40, Short.MAX_VALUE))
-        );
-        jPanel14Layout.setVerticalGroup(
-            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel14Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel15)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel16)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField2_Emisiones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel17))
-                .addGap(18, 18, 18)
-                .addComponent(jButton6)
-                .addContainerGap(29, Short.MAX_VALUE))
-        );
 
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -658,8 +605,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                                 .addGap(85, 85, 85)))
                         .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addGap(342, 342, 342)
                         .addComponent(jButton4_GraficarMatlab)))
@@ -686,9 +632,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                         .addGap(81, 81, 81))
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(264, 264, 264))))
+                        .addGap(420, 420, 420))))
             .addGroup(jPanel7Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -704,6 +648,62 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         TiposUSR_HEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ama de casa", "Estudiante" }));
 
         jLabel12.setText("HEV");
+
+        jPanel14.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel14.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+
+        jLabel15.setText("EMISIONES");
+
+        jTextField2_Emisiones.setText("0");
+
+        jLabel16.setText("EV SIMULADOS");
+
+        jLabel17.setText("VC TIPO SPARK GT");
+
+        jButton6.setText("jButton6");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
+        jPanel14.setLayout(jPanel14Layout);
+        jPanel14Layout.setHorizontalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel14Layout.createSequentialGroup()
+                        .addGap(65, 65, 65)
+                        .addComponent(jLabel15))
+                    .addGroup(jPanel14Layout.createSequentialGroup()
+                        .addGap(23, 23, 23)
+                        .addComponent(jTextField2_Emisiones, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel17))
+                    .addGroup(jPanel14Layout.createSequentialGroup()
+                        .addGap(100, 100, 100)
+                        .addComponent(jLabel16))
+                    .addGroup(jPanel14Layout.createSequentialGroup()
+                        .addGap(73, 73, 73)
+                        .addComponent(jButton6)))
+                .addContainerGap(40, Short.MAX_VALUE))
+        );
+        jPanel14Layout.setVerticalGroup(
+            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel14Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel15)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel16)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jTextField2_Emisiones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel17))
+                .addGap(18, 18, 18)
+                .addComponent(jButton6)
+                .addContainerGap(29, Short.MAX_VALUE))
+        );
 
         jMenuBar1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -753,12 +753,17 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                                 .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(199, 199, 199)
-                                .addComponent(jLabel12)
-                                .addGap(37, 37, 37)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(TiposEV_HEV, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(TiposUSR_HEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(199, 199, 199)
+                                        .addComponent(jLabel12)
+                                        .addGap(37, 37, 37)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(TiposEV_HEV, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(TiposUSR_HEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(126, 126, 126)
+                                        .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(180, 180, 180))
         );
@@ -770,13 +775,17 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                         .addContainerGap()
                         .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(337, 337, 337)
-                        .addComponent(TiposEV_HEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(TiposUSR_HEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(360, 360, 360)
-                        .addComponent(jLabel12)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(337, 337, 337)
+                                .addComponent(TiposEV_HEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(TiposUSR_HEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(360, 360, 360)
+                                .addComponent(jLabel12)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(293, 293, 293)
@@ -866,24 +875,24 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         System.out.print(TiposUSR_BEV.getSelectedIndex());
         //variable de la salida0
         if(ConsumoE.isSelected()==true){
-            procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 9, 1, 1.0);
-            }
-        else{
-            procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 9, 1, 0.0);
-        }
-        if(ImpactoCurva.isSelected()==true){
             procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 10, 1, 1.0);
             }
         else{
             procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 10, 1, 0.0);
         }
+        if(ImpactoCurva.isSelected()==true){
+            procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 11, 1, 1.0);
+            }
+        else{
+            procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 11, 1, 0.0);
+        }
        
-//        try {
-//            procedimientosMAtlab.prcedimiento0var(System.getProperty("user.dir")+"/MainMatlab.exe");    
-//            
-//        } catch (IOException ex) {
-//            Logger.getLogger(Panel_Principal_1.class.getName()).log(Level.SEVERE, null, ex);
-//        }
+        try {
+            procedimientosMAtlab.prcedimiento0var(System.getProperty("user.dir")+"/curvacarga.exe");    
+            
+        } catch (IOException ex) {
+            Logger.getLogger(Panel_Principal_1.class.getName()).log(Level.SEVERE, null, ex);
+        }
         
         
     }//GEN-LAST:event_jButton4_GraficarMatlabActionPerformed
@@ -972,7 +981,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         procedimientosMAtlab.writeExcel(System.getProperty("user.dir") + "/Vehiculos.xls", "Entrada", 1, 1, Double.valueOf(Esenario_ImpactoAmb.getSelectedIndex())+1.0);
         //procedimientosMAtlab.writeExcel(System.getProperty("user.dir") + "/Vehiculos.xls", "Entrada", 1, 1, Double.valueOf(Gasolina_ImpactoAmb.getSelectedIndex())+1.0);
         try {
-            procedimientosMAtlab.prcedimiento0var(System.getProperty("user.dir")+"/Probabilidad.exe");    
+            procedimientosMAtlab.prcedimiento0var(System.getProperty("user.dir")+"/Impacto.exe");    
             
         } catch (IOException ex) {
             Logger.getLogger(Panel_Principal_1.class.getName()).log(Level.SEVERE, null, ex);
