@@ -36,6 +36,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
      * Creates new form Panel_Principal
      */
     public Panel_Principal_1() {
+         
         initComponents();
         
     }
@@ -51,8 +52,8 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jFrame2 = new javax.swing.JFrame();
-        jFileChooser2 = new javax.swing.JFileChooser();
+        jFrame_ImagenUsuarios = new javax.swing.JFrame();
+        javax.swing.JLabel ImagenUsuarios = new javax.swing.JLabel();
         jSlider1 = new javax.swing.JSlider();
         jButton2 = new javax.swing.JButton();
         jPanel5 = new javax.swing.JPanel();
@@ -115,27 +116,25 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         jMenu2 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
 
-        jFileChooser2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jFileChooser2ActionPerformed(evt);
-            }
-        });
+        jFrame_ImagenUsuarios.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        jFrame_ImagenUsuarios.setFocusTraversalPolicyProvider(true);
 
-        javax.swing.GroupLayout jFrame2Layout = new javax.swing.GroupLayout(jFrame2.getContentPane());
-        jFrame2.getContentPane().setLayout(jFrame2Layout);
-        jFrame2Layout.setHorizontalGroup(
-            jFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jFrame2Layout.createSequentialGroup()
+        ImagenUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/CxnTiposUsuarios.jpg"))); // NOI18N
+
+        javax.swing.GroupLayout jFrame_ImagenUsuariosLayout = new javax.swing.GroupLayout(jFrame_ImagenUsuarios.getContentPane());
+        jFrame_ImagenUsuarios.getContentPane().setLayout(jFrame_ImagenUsuariosLayout);
+        jFrame_ImagenUsuariosLayout.setHorizontalGroup(
+            jFrame_ImagenUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jFrame_ImagenUsuariosLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jFileChooser2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(ImagenUsuarios)
                 .addContainerGap())
         );
-        jFrame2Layout.setVerticalGroup(
-            jFrame2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jFrame2Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jFileChooser2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+        jFrame_ImagenUsuariosLayout.setVerticalGroup(
+            jFrame_ImagenUsuariosLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jFrame_ImagenUsuariosLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(ImagenUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -146,7 +145,8 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         setFocusTraversalPolicyProvider(true);
         setForeground(java.awt.Color.white);
         setMaximizedBounds(new java.awt.Rectangle(100, 100, 100, 100));
-        setMaximumSize(new java.awt.Dimension(100, 100));
+        setMaximumSize(new java.awt.Dimension(900, 900));
+        setMinimumSize(new java.awt.Dimension(600, 600));
         setPreferredSize(new java.awt.Dimension(970, 870));
 
         jSlider1.setMaximum(10);
@@ -738,7 +738,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(517, 517, 517)
                         .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 803, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(173, 173, 173))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
@@ -801,7 +801,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(245, 245, 245)
                         .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 50, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
@@ -850,7 +850,10 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
     }//GEN-LAST:event_jSlider3_anioSimulacionStateChanged
 
     private void jCheckBox_CasoSimularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox_CasoSimularActionPerformed
-
+        
+        jFrame_ImagenUsuarios.setSize(900, 400);
+        jFrame_ImagenUsuarios.setLocationRelativeTo(null);
+        jFrame_ImagenUsuarios.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox_CasoSimularActionPerformed
 
@@ -906,10 +909,6 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         
         // TODO add your handling code here:
     }//GEN-LAST:event_jMenu2ActionPerformed
-
-    private void jFileChooser2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jFileChooser2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jFileChooser2ActionPerformed
 
     private void jSlider2_CantidadVehiculosStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider2_CantidadVehiculosStateChanged
 
@@ -1027,6 +1026,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             @Override
         public void run() {
+                 
                 new Panel_Principal_1().setVisible(true);
                 
             }
@@ -1058,8 +1058,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
     private javax.swing.JButton jButton4_GraficarMatlab;
     private javax.swing.JButton jButton6;
     private javax.swing.JCheckBox jCheckBox_CasoSimular;
-    private javax.swing.JFileChooser jFileChooser2;
-    private javax.swing.JFrame jFrame2;
+    private javax.swing.JFrame jFrame_ImagenUsuarios;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
