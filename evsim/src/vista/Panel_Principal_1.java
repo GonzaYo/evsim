@@ -83,14 +83,14 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         Cantidad_BEV = new javax.swing.JComboBox();
         Cantidad_HEV = new javax.swing.JComboBox();
         jSeparator1 = new javax.swing.JSeparator();
-        jTextField1 = new javax.swing.JTextField();
-        jSlider3 = new javax.swing.JSlider();
-        jSlider2 = new javax.swing.JSlider();
-        jTextField13 = new javax.swing.JTextField();
-        jButton4 = new javax.swing.JButton();
+        jTextField1_anioSimular = new javax.swing.JTextField();
+        jSlider3_anioSimulacion = new javax.swing.JSlider();
+        jSlider2_CantidadVehiculos = new javax.swing.JSlider();
+        jTextField13_CantidadVehiculos = new javax.swing.JTextField();
+        jButton4_GraficarMatlab = new javax.swing.JButton();
         jPanel14 = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
-        jTextField2 = new javax.swing.JTextField();
+        jTextField2_Emisiones = new javax.swing.JTextField();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
         jButton6 = new javax.swing.JButton();
@@ -102,7 +102,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         jPanel8 = new javax.swing.JPanel();
         Esenario_ImpactoAmb = new javax.swing.JComboBox();
         jLabel4 = new javax.swing.JLabel();
-        jSlider4 = new javax.swing.JSlider();
+        jSlider4_anioImpactoAmbiental = new javax.swing.JSlider();
         Tiempo_ImpactoAmb = new javax.swing.JTextField();
         BottonImpactoAmb = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
@@ -350,36 +350,36 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                 .addContainerGap(39, Short.MAX_VALUE))
         );
 
-        jTextField1.setText("2014");
+        jTextField1_anioSimular.setText("2014");
 
-        jSlider3.setBackground(new java.awt.Color(255, 255, 255));
-        jSlider3.setMajorTickSpacing(1);
-        jSlider3.setMaximum(2033);
-        jSlider3.setMinimum(2014);
-        jSlider3.setMinorTickSpacing(1);
-        jSlider3.setPaintTicks(true);
-        jSlider3.setSnapToTicks(true);
-        jSlider3.setToolTipText("");
-        jSlider3.setValue(1);
-        jSlider3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jSlider3.addChangeListener(new javax.swing.event.ChangeListener() {
+        jSlider3_anioSimulacion.setBackground(new java.awt.Color(255, 255, 255));
+        jSlider3_anioSimulacion.setMajorTickSpacing(1);
+        jSlider3_anioSimulacion.setMaximum(2033);
+        jSlider3_anioSimulacion.setMinimum(2014);
+        jSlider3_anioSimulacion.setMinorTickSpacing(1);
+        jSlider3_anioSimulacion.setPaintTicks(true);
+        jSlider3_anioSimulacion.setSnapToTicks(true);
+        jSlider3_anioSimulacion.setToolTipText("");
+        jSlider3_anioSimulacion.setValue(1);
+        jSlider3_anioSimulacion.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jSlider3_anioSimulacion.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                jSlider3StateChanged(evt);
+                jSlider3_anioSimulacionStateChanged(evt);
             }
         });
 
-        jSlider2.setBackground(new java.awt.Color(255, 255, 255));
-        jSlider2.setMajorTickSpacing(1);
-        jSlider2.setMaximum(1);
-        jSlider2.setMinorTickSpacing(1);
-        jSlider2.setValue(0);
-        jSlider2.addChangeListener(new javax.swing.event.ChangeListener() {
+        jSlider2_CantidadVehiculos.setBackground(new java.awt.Color(255, 255, 255));
+        jSlider2_CantidadVehiculos.setMajorTickSpacing(1);
+        jSlider2_CantidadVehiculos.setMaximum(1);
+        jSlider2_CantidadVehiculos.setMinorTickSpacing(1);
+        jSlider2_CantidadVehiculos.setValue(0);
+        jSlider2_CantidadVehiculos.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                jSlider2StateChanged(evt);
+                jSlider2_CantidadVehiculosStateChanged(evt);
             }
         });
 
-        jTextField13.setText("0");
+        jTextField13_CantidadVehiculos.setText("0");
 
         javax.swing.GroupLayout jPanel9Layout = new javax.swing.GroupLayout(jPanel9);
         jPanel9.setLayout(jPanel9Layout);
@@ -401,14 +401,14 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel9Layout.createSequentialGroup()
-                                .addComponent(jSlider2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jSlider2_CantidadVehiculos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(jTextField13_CantidadVehiculos, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel9Layout.createSequentialGroup()
-                                .addComponent(jSlider3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jSlider3_anioSimulacion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(5, 5, 5)
-                                .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap())
+                                .addComponent(jTextField1_anioSimular, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -418,25 +418,25 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                 .addGap(22, 22, 22)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jSlider3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jSlider3_anioSimulacion, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel9))
-                    .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField1_anioSimular, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(23, 23, 23)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(jSlider2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jSlider2_CantidadVehiculos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addComponent(jLabel8))
-                    .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jTextField13_CantidadVehiculos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(29, 29, 29)
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jButton4.setText("GRAFICO DE MATLAB");
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        jButton4_GraficarMatlab.setText("GRAFICO DE MATLAB");
+        jButton4_GraficarMatlab.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                jButton4_GraficarMatlabActionPerformed(evt);
             }
         });
 
@@ -445,7 +445,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
 
         jLabel15.setText("EMISIONES");
 
-        jTextField2.setText("0");
+        jTextField2_Emisiones.setText("0");
 
         jLabel16.setText("EV SIMULADOS");
 
@@ -469,7 +469,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                         .addComponent(jLabel15))
                     .addGroup(jPanel14Layout.createSequentialGroup()
                         .addGap(23, 23, 23)
-                        .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jTextField2_Emisiones, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel17))
                     .addGroup(jPanel14Layout.createSequentialGroup()
@@ -489,7 +489,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                 .addComponent(jLabel16)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jTextField2_Emisiones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel17))
                 .addGap(18, 18, 18)
                 .addComponent(jButton6)
@@ -541,19 +541,19 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/TendenciaCrecimiento.png"))); // NOI18N
 
-        jSlider4.setBackground(new java.awt.Color(255, 255, 255));
-        jSlider4.setMajorTickSpacing(1);
-        jSlider4.setMaximum(2033);
-        jSlider4.setMinimum(2014);
-        jSlider4.setMinorTickSpacing(1);
-        jSlider4.setPaintTicks(true);
-        jSlider4.setSnapToTicks(true);
-        jSlider4.setToolTipText("");
-        jSlider4.setValue(1);
-        jSlider4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jSlider4.addChangeListener(new javax.swing.event.ChangeListener() {
+        jSlider4_anioImpactoAmbiental.setBackground(new java.awt.Color(255, 255, 255));
+        jSlider4_anioImpactoAmbiental.setMajorTickSpacing(1);
+        jSlider4_anioImpactoAmbiental.setMaximum(2033);
+        jSlider4_anioImpactoAmbiental.setMinimum(2014);
+        jSlider4_anioImpactoAmbiental.setMinorTickSpacing(1);
+        jSlider4_anioImpactoAmbiental.setPaintTicks(true);
+        jSlider4_anioImpactoAmbiental.setSnapToTicks(true);
+        jSlider4_anioImpactoAmbiental.setToolTipText("");
+        jSlider4_anioImpactoAmbiental.setValue(1);
+        jSlider4_anioImpactoAmbiental.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jSlider4_anioImpactoAmbiental.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                jSlider4StateChanged(evt);
+                jSlider4_anioImpactoAmbientalStateChanged(evt);
             }
         });
 
@@ -580,7 +580,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel8Layout.createSequentialGroup()
                         .addComponent(jLabel4)
-                        .addContainerGap())
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -590,7 +590,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                                         .addComponent(Esenario_ImpactoAmb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                         .addComponent(Tiempo_ImpactoAmb, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jSlider4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jSlider4_anioImpactoAmbiental, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGap(22, 22, 22))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel8Layout.createSequentialGroup()
                                 .addComponent(BottonImpactoAmb)
@@ -602,7 +602,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jLabel4)
                 .addGap(25, 25, 25)
-                .addComponent(jSlider4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jSlider4_anioImpactoAmbiental, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Esenario_ImpactoAmb, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -642,7 +642,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                             .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addGap(343, 343, 343)
-                        .addComponent(jButton4)))
+                        .addComponent(jButton4_GraficarMatlab)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
@@ -675,7 +675,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 0, Short.MAX_VALUE)))
-                .addComponent(jButton4)
+                .addComponent(jButton4_GraficarMatlab)
                 .addGap(119, 119, 119))
         );
 
@@ -775,36 +775,36 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ImpactoCurvaActionPerformed
 
-    private void jSlider3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider3StateChanged
+    private void jSlider3_anioSimulacionStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider3_anioSimulacionStateChanged
         try {
             
-            String anio =Integer.toString(jSlider3.getValue());
-            jTextField1.setText(anio);
+            String anio =Integer.toString(jSlider3_anioSimulacion.getValue());
+            jTextField1_anioSimular.setText(anio);
             
              int i ,cantidad, m;
-             m = Integer.parseInt(jTextField1.getText());
+             m = Integer.parseInt(jTextField1_anioSimular.getText());
              int[] j = {100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121};
              
              cantidad =j[10];
              String anio1 =Integer.toString(m);
-            jTextField1.setText(anio1);
+            jTextField1_anioSimular.setText(anio1);
             //PrcedimientosBD damecantidad = new PrcedimientosBD();
             //cantidad=damecantidad.NoVehoculosPorAnio(jTextField1.getText());
-            jSlider2.setMaximum(cantidad);
+            jSlider2_CantidadVehiculos.setMaximum(cantidad);
             
             // TODO add your handling code here:
         } catch (Exception ex) {
             Logger.getLogger(Panel_Principal_1.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-    }//GEN-LAST:event_jSlider3StateChanged
+    }//GEN-LAST:event_jSlider3_anioSimulacionStateChanged
 
     private void jCheckBox_CasoSimularActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox_CasoSimularActionPerformed
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox_CasoSimularActionPerformed
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void jButton4_GraficarMatlabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4_GraficarMatlabActionPerformed
        
         ProcedimientosMAtlab procedimientosMAtlab = new ProcedimientosMAtlab();
         //Tipos de EV
@@ -841,7 +841,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
 //        }
         
         
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_jButton4_GraficarMatlabActionPerformed
 
     private void jMenu3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu3ActionPerformed
         
@@ -857,12 +857,12 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jFileChooser2ActionPerformed
 
-    private void jSlider2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider2StateChanged
+    private void jSlider2_CantidadVehiculosStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider2_CantidadVehiculosStateChanged
 
-        String CantidadMax =Integer.toString(jSlider2.getValue());
-       jTextField13.setText(CantidadMax); 
+        String CantidadMax =Integer.toString(jSlider2_CantidadVehiculos.getValue());
+       jTextField13_CantidadVehiculos.setText(CantidadMax); 
        int cantidad;
-        cantidad=jSlider2.getValue();
+        cantidad=jSlider2_CantidadVehiculos.getValue();
         Cantidad_PHEV.removeAllItems();
         Cantidad_BEV.removeAllItems();
         Cantidad_HEV.removeAllItems();
@@ -872,7 +872,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                 Cantidad_HEV.addItem(Integer.toString(i));
            }
         // TODO add your handling code here:
-    }//GEN-LAST:event_jSlider2StateChanged
+    }//GEN-LAST:event_jSlider2_CantidadVehiculosStateChanged
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
         ProcedimientosMAtlab procedimientosMAtlab = new ProcedimientosMAtlab();
@@ -890,11 +890,11 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_ConsumoEActionPerformed
 
-    private void jSlider4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider4StateChanged
+    private void jSlider4_anioImpactoAmbientalStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSlider4_anioImpactoAmbientalStateChanged
 
         try {
             
-            String anio =Integer.toString(jSlider4.getValue());
+            String anio =Integer.toString(jSlider4_anioImpactoAmbiental.getValue());
             Tiempo_ImpactoAmb.setText(anio);
             
              int i ,cantidad, m;
@@ -913,7 +913,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
             Logger.getLogger(Panel_Principal_1.class.getName()).log(Level.SEVERE, null, ex);
         }
         // TODO add your handling code here:
-    }//GEN-LAST:event_jSlider4StateChanged
+    }//GEN-LAST:event_jSlider4_anioImpactoAmbientalStateChanged
 
     private void Tiempo_ImpactoAmbActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Tiempo_ImpactoAmbActionPerformed
         // TODO add your handling code here:
@@ -992,7 +992,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
     private javax.swing.JComboBox TiposUSR_HEV;
     private javax.swing.JComboBox TiposUSR_PHEV;
     private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton4_GraficarMatlab;
     private javax.swing.JButton jButton6;
     private javax.swing.JCheckBox jCheckBox_CasoSimular;
     private javax.swing.JFileChooser jFileChooser2;
@@ -1031,12 +1031,12 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel9;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSlider jSlider1;
-    private javax.swing.JSlider jSlider2;
-    private javax.swing.JSlider jSlider3;
-    private javax.swing.JSlider jSlider4;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField13;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JSlider jSlider2_CantidadVehiculos;
+    private javax.swing.JSlider jSlider3_anioSimulacion;
+    private javax.swing.JSlider jSlider4_anioImpactoAmbiental;
+    private javax.swing.JTextField jTextField13_CantidadVehiculos;
+    private javax.swing.JTextField jTextField1_anioSimular;
+    private javax.swing.JTextField jTextField2_Emisiones;
     // End of variables declaration//GEN-END:variables
 
 
