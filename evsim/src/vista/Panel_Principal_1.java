@@ -54,10 +54,9 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
 
         jFrame_ImagenUsuarios = new javax.swing.JFrame();
         javax.swing.JLabel ImagenUsuarios = new javax.swing.JLabel();
-        jSlider1 = new javax.swing.JSlider();
-        jButton2 = new javax.swing.JButton();
-        jPanel5 = new javax.swing.JPanel();
-        jPanel4 = new javax.swing.JPanel();
+        jFrame_AdvertenciaSumaCantidad = new javax.swing.JFrame();
+        jPanel1 = new javax.swing.JPanel();
+        jLabel22 = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         jPanel13 = new javax.swing.JPanel();
         ConsumoE = new javax.swing.JCheckBox();
@@ -83,6 +82,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         TiposUSR_PHEV = new javax.swing.JComboBox();
         TiposUSR_BEV = new javax.swing.JComboBox();
         TiposEV_BEV = new javax.swing.JComboBox();
+        jLabel20 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jTextField1_anioSimular = new javax.swing.JTextField();
         jSlider3_anioSimulacion = new javax.swing.JSlider();
@@ -101,16 +101,6 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         Tiempo_ImpactoAmb = new javax.swing.JTextField();
         BottonImpactoAmb = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        TiposEV_HEV = new javax.swing.JComboBox();
-        TiposUSR_HEV = new javax.swing.JComboBox();
-        jLabel12 = new javax.swing.JLabel();
-        jPanel14 = new javax.swing.JPanel();
-        jLabel15 = new javax.swing.JLabel();
-        jTextField2_Emisiones = new javax.swing.JTextField();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
-        jButton6 = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenu2 = new javax.swing.JMenu();
@@ -137,6 +127,36 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                 .addComponent(ImagenUsuarios, javax.swing.GroupLayout.PREFERRED_SIZE, 385, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
+        jFrame_AdvertenciaSumaCantidad.setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        jFrame_AdvertenciaSumaCantidad.setBackground(new java.awt.Color(255, 255, 255));
+
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/AdvertenciaTexto.png"))); // NOI18N
+        jLabel22.setText("jLabel22");
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 363, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel22)
+        );
+
+        javax.swing.GroupLayout jFrame_AdvertenciaSumaCantidadLayout = new javax.swing.GroupLayout(jFrame_AdvertenciaSumaCantidad.getContentPane());
+        jFrame_AdvertenciaSumaCantidad.getContentPane().setLayout(jFrame_AdvertenciaSumaCantidadLayout);
+        jFrame_AdvertenciaSumaCantidadLayout.setHorizontalGroup(
+            jFrame_AdvertenciaSumaCantidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        jFrame_AdvertenciaSumaCantidadLayout.setVerticalGroup(
+            jFrame_AdvertenciaSumaCantidadLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Evsim");
         setBackground(new java.awt.Color(255, 255, 255));
@@ -144,50 +164,10 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         setFocusTraversalPolicyProvider(true);
         setForeground(java.awt.Color.white);
-        setMaximizedBounds(new java.awt.Rectangle(100, 100, 100, 100));
+        setMaximizedBounds(new java.awt.Rectangle(0, 0, 100, 100));
         setMaximumSize(new java.awt.Dimension(900, 900));
         setMinimumSize(new java.awt.Dimension(600, 600));
         setPreferredSize(new java.awt.Dimension(970, 870));
-
-        jSlider1.setMaximum(10);
-        jSlider1.setPaintLabels(true);
-        jSlider1.setPaintTicks(true);
-        jSlider1.setSnapToTicks(true);
-        jSlider1.setCursor(new java.awt.Cursor(java.awt.Cursor.CROSSHAIR_CURSOR));
-        jSlider1.addComponentListener(new java.awt.event.ComponentAdapter() {
-            public void componentShown(java.awt.event.ComponentEvent evt) {
-                jSlider1ComponentShown(evt);
-            }
-        });
-
-        jButton2.setText("SIMULAR/CALCULAR");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 265, Short.MAX_VALUE)
-        );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 236, Short.MAX_VALUE)
-        );
-
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
 
         jPanel7.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -312,30 +292,37 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                             .addComponent(TiposEV_PHEV, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(52, 52, 52)))
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel18)
                     .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addGap(10, 10, 10)
+                        .addGap(17, 17, 17)
+                        .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(Cantidad_PHEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Cantidad_BEV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Cantidad_PHEV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Cantidad_BEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
-                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
-                        .addComponent(TiposUSR_PHEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
-                        .addComponent(TiposUSR_BEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
-                        .addComponent(jLabel14)
-                        .addGap(54, 54, 54))))
+                            .addComponent(jLabel18)
+                            .addGroup(jPanel10Layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(Cantidad_PHEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Cantidad_BEV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Cantidad_PHEV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Cantidad_BEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 27, Short.MAX_VALUE)
+                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                                .addComponent(TiposUSR_PHEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap())
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                                .addComponent(TiposUSR_BEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap())
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
+                                .addComponent(jLabel14)
+                                .addGap(54, 54, 54))))))
         );
         jPanel10Layout.setVerticalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
+                .addComponent(jLabel20, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(2, 2, 2)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -603,11 +590,11 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(jLabel3)
                                 .addGap(85, 85, 85)))
-                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jPanel8, javax.swing.GroupLayout.PREFERRED_SIZE, 249, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(jPanel7Layout.createSequentialGroup()
-                        .addGap(342, 342, 342)
+                        .addGap(367, 367, 367)
                         .addComponent(jButton4_GraficarMatlab)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -627,9 +614,9 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                         .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(56, 56, 56)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton4_GraficarMatlab)
-                        .addGap(81, 81, 81))
+                        .addGap(126, 126, 126))
                     .addGroup(jPanel7Layout.createSequentialGroup()
                         .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGap(420, 420, 420))))
@@ -639,70 +626,6 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jPanel6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
-        );
-
-        jLabel6.setText("jLabel6");
-
-        TiposEV_HEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Honda", "Toyota", "Ford" }));
-
-        TiposUSR_HEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Ama de casa", "Estudiante" }));
-
-        jLabel12.setText("HEV");
-
-        jPanel14.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel14.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-
-        jLabel15.setText("EMISIONES");
-
-        jTextField2_Emisiones.setText("0");
-
-        jLabel16.setText("EV SIMULADOS");
-
-        jLabel17.setText("VC TIPO SPARK GT");
-
-        jButton6.setText("jButton6");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout jPanel14Layout = new javax.swing.GroupLayout(jPanel14);
-        jPanel14.setLayout(jPanel14Layout);
-        jPanel14Layout.setHorizontalGroup(
-            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel14Layout.createSequentialGroup()
-                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel14Layout.createSequentialGroup()
-                        .addGap(65, 65, 65)
-                        .addComponent(jLabel15))
-                    .addGroup(jPanel14Layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jTextField2_Emisiones, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel17))
-                    .addGroup(jPanel14Layout.createSequentialGroup()
-                        .addGap(100, 100, 100)
-                        .addComponent(jLabel16))
-                    .addGroup(jPanel14Layout.createSequentialGroup()
-                        .addGap(73, 73, 73)
-                        .addComponent(jButton6)))
-                .addContainerGap(40, Short.MAX_VALUE))
-        );
-        jPanel14Layout.setVerticalGroup(
-            jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel14Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel15)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel16)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel14Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jTextField2_Emisiones, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel17))
-                .addGap(18, 18, 18)
-                .addComponent(jButton6)
-                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         jMenuBar1.setBackground(new java.awt.Color(255, 255, 255));
@@ -734,92 +657,20 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(517, 517, 517)
-                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(173, 173, 173))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addGap(84, 84, 84)
-                                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addGap(755, 755, 755)
-                                .addComponent(jButton2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 285, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(199, 199, 199)
-                                        .addComponent(jLabel12)
-                                        .addGap(37, 37, 37)
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                            .addComponent(TiposEV_HEV, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                            .addComponent(TiposUSR_HEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(126, 126, 126)
-                                        .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addGap(180, 180, 180))
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(51, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(337, 337, 337)
-                                .addComponent(TiposEV_HEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(TiposUSR_HEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(360, 360, 360)
-                                .addComponent(jLabel12)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(293, 293, 293)
-                        .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(21, 21, 21)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton2)
-                            .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(247, 247, 247)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(245, 245, 245)
-                        .addComponent(jSlider1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, 648, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(310, 310, 310))
         );
 
-        pack();
+        java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
+        setBounds((screenSize.width-969)/2, (screenSize.height-713)/2, 969, 713);
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jSlider1ComponentShown(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_jSlider1ComponentShown
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jSlider1ComponentShown
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // boton para graficar
-      
-
-        
-        
-                
-                
-    }//GEN-LAST:event_jButton2ActionPerformed
 
     private void ImpactoCurvaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImpactoCurvaActionPerformed
         // TODO add your handling code here:
@@ -860,43 +711,51 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
     private void jButton4_GraficarMatlabActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4_GraficarMatlabActionPerformed
        
         ProcedimientosMAtlab procedimientosMAtlab = new ProcedimientosMAtlab();
-        //Cantidad Vehiculos
-        procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 5, 4, Double.valueOf(jTextField13_CantidadVehiculos.getText()));
-        //Tipos de EV
-        procedimientosMAtlab.writeExcelString(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 5, 1, TiposEV_PHEV.getSelectedItem().toString());
-        procedimientosMAtlab.writeExcelString(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 6, 1, TiposEV_PHEV1.getSelectedItem().toString());
-        procedimientosMAtlab.writeExcelString(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 7, 1, TiposEV_BEV.getSelectedItem().toString());
-        procedimientosMAtlab.writeExcelString(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 8, 1, TiposEV_BEV1.getSelectedItem().toString());
-        //Cantidad por usuario y vehiculo
-        procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 5, 2, Double.valueOf(Cantidad_PHEV.getSelectedItem().toString()));
-        procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 6, 2, Double.valueOf(Cantidad_PHEV1.getSelectedItem().toString()));
-        procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 7, 2, Double.valueOf(Cantidad_BEV.getSelectedItem().toString()));
-        procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 8, 2, Double.valueOf(Cantidad_BEV1.getSelectedItem().toString()));        
-        //Tipos de Usuario
-        procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 5, 3, Double.valueOf(TiposUSR_PHEV.getSelectedIndex()+1));
-        procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 7, 3, Double.valueOf(TiposUSR_BEV.getSelectedIndex()+1));
-        System.out.print(TiposUSR_BEV.getSelectedIndex());
-        //variable de la salida0
-        if(ConsumoE.isSelected()==true){
-            procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 10, 1, 1.0);
+        //si la suma de todas las cantidades es igual entonces proceda a hacer la simulacion de lo contrario muestra un mensaje 
+        if((Double.valueOf(Cantidad_PHEV.getSelectedItem().toString())+Double.valueOf(Cantidad_PHEV1.getSelectedItem().toString())+Double.valueOf(Cantidad_BEV.getSelectedItem().toString())+Double.valueOf(Cantidad_BEV1.getSelectedItem().toString())==Double.valueOf(jTextField13_CantidadVehiculos.getText()))){
+            //Cantidad Vehiculos
+            procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 5, 4, Double.valueOf(jTextField13_CantidadVehiculos.getText()));
+            //Tipos de EV
+            procedimientosMAtlab.writeExcelString(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 5, 1, TiposEV_PHEV.getSelectedItem().toString());
+            procedimientosMAtlab.writeExcelString(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 6, 1, TiposEV_PHEV1.getSelectedItem().toString());
+            procedimientosMAtlab.writeExcelString(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 7, 1, TiposEV_BEV.getSelectedItem().toString());
+            procedimientosMAtlab.writeExcelString(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 8, 1, TiposEV_BEV1.getSelectedItem().toString());
+            //Cantidad por usuario y vehiculo
+            procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 5, 2, Double.valueOf(Cantidad_PHEV.getSelectedItem().toString()));
+            procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 6, 2, Double.valueOf(Cantidad_PHEV1.getSelectedItem().toString()));
+            procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 7, 2, Double.valueOf(Cantidad_BEV.getSelectedItem().toString()));
+            procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 8, 2, Double.valueOf(Cantidad_BEV1.getSelectedItem().toString()));        
+            //Tipos de Usuario
+            procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 5, 3, Double.valueOf(TiposUSR_PHEV.getSelectedIndex()+1));
+            procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 7, 3, Double.valueOf(TiposUSR_BEV.getSelectedIndex()+1));
+            System.out.print(TiposUSR_BEV.getSelectedIndex());
+            //variable de la salida0
+            if(ConsumoE.isSelected()==true){
+                procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 10, 1, 1.0);
+                }
+            else{
+                procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 10, 1, 0.0);
             }
-        else{
-            procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 10, 1, 0.0);
-        }
-        if(ImpactoCurva.isSelected()==true){
-            procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 11, 1, 1.0);
+            if(ImpactoCurva.isSelected()==true){
+                procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 11, 1, 1.0);
+                }
+            else{
+                procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 11, 1, 0.0);
             }
-        else{
-            procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 11, 1, 0.0);
-        }
-       
-        try {
-            procedimientosMAtlab.prcedimiento0var(System.getProperty("user.dir")+"/curvacarga.exe");    
-            
-        } catch (IOException ex) {
-            Logger.getLogger(Panel_Principal_1.class.getName()).log(Level.SEVERE, null, ex);
-        }
+
+            try {
+                procedimientosMAtlab.prcedimiento0var(System.getProperty("user.dir")+"/curvacarga.exe");    
+
+            } catch (IOException ex) {
+                Logger.getLogger(Panel_Principal_1.class.getName()).log(Level.SEVERE, null, ex);
+            }
         
+        }
+        else {
+            jFrame_AdvertenciaSumaCantidad.setSize(371, 98);
+            jFrame_AdvertenciaSumaCantidad.setLocationRelativeTo(null);
+            jFrame_AdvertenciaSumaCantidad.setVisible(true);
+        }
         
     }//GEN-LAST:event_jButton4_GraficarMatlabActionPerformed
 
@@ -928,18 +787,6 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
            }
         // TODO add your handling code here:
     }//GEN-LAST:event_jSlider2_CantidadVehiculosStateChanged
-
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        ProcedimientosMAtlab procedimientosMAtlab = new ProcedimientosMAtlab();
-       //procedimientosMAtlab.writeExcel(System.getProperty("user.dir")+"/Vehiculos.xls", "Entrada", 1, 0, Double.valueOf(jTextField1.getText()));
-        try {
-            procedimientosMAtlab.prcedimiento0var(System.getProperty("user.dir")+"/Impacto.exe");    
-            
-        } catch (IOException ex) {
-            Logger.getLogger(Panel_Principal_1.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
 
     private void ConsumoEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ConsumoEActionPerformed
         // TODO add your handling code here:
@@ -1048,33 +895,27 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
     private javax.swing.JTextField Tiempo_ImpactoAmb;
     private javax.swing.JComboBox TiposEV_BEV;
     private javax.swing.JComboBox TiposEV_BEV1;
-    private javax.swing.JComboBox TiposEV_HEV;
     private javax.swing.JComboBox TiposEV_PHEV;
     private javax.swing.JComboBox TiposEV_PHEV1;
     private javax.swing.JComboBox TiposUSR_BEV;
-    private javax.swing.JComboBox TiposUSR_HEV;
     private javax.swing.JComboBox TiposUSR_PHEV;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton4_GraficarMatlab;
-    private javax.swing.JButton jButton6;
     private javax.swing.JCheckBox jCheckBox_CasoSimular;
+    private javax.swing.JFrame jFrame_AdvertenciaSumaCantidad;
     private javax.swing.JFrame jFrame_ImagenUsuarios;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
-    private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
@@ -1082,23 +923,19 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel13;
-    private javax.swing.JPanel jPanel14;
-    private javax.swing.JPanel jPanel4;
-    private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel jPanel6;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel jPanel9;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JSlider jSlider1;
     private javax.swing.JSlider jSlider2_CantidadVehiculos;
     private javax.swing.JSlider jSlider3_anioSimulacion;
     private javax.swing.JSlider jSlider4_anioImpactoAmbiental;
     private javax.swing.JTextField jTextField13_CantidadVehiculos;
     private javax.swing.JTextField jTextField1_anioSimular;
-    private javax.swing.JTextField jTextField2_Emisiones;
     // End of variables declaration//GEN-END:variables
 
 
