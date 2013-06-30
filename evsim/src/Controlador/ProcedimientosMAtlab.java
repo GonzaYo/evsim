@@ -82,7 +82,25 @@ public class ProcedimientosMAtlab {
         }
     }
 
-
+//Funcion  que envia datos string a excel 
+      public void writeExcelInt(String excel_file, String sheet_name, int row, int column, int value)
+    {
+        
+        try{
+            Workbook target_workbook = Workbook.getWorkbook(new File(excel_file));
+            WritableWorkbook workbook = Workbook.createWorkbook(new File(excel_file), target_workbook);
+            target_workbook.close();
+            WritableSheet sheet = workbook.getSheet(sheet_name);
+            jxl.write.Number number = new jxl.write.Number(column, row, value);
+            sheet.addCell(number);
+            workbook.write();
+            workbook.close();
+        }
+        catch(Exception e)
+        {
+            System.out.println("writeExcel ->"+e);
+        }
+    }
 
 
     
