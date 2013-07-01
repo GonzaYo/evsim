@@ -67,7 +67,6 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jPanel10 = new javax.swing.JPanel();
-        TiposEV_PHEV = new javax.swing.JComboBox();
         jLabel10 = new javax.swing.JLabel();
         jLabel11 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
@@ -76,13 +75,14 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         Cantidad_BEV = new javax.swing.JComboBox();
         Cantidad_PHEV1 = new javax.swing.JComboBox();
         Cantidad_BEV1 = new javax.swing.JComboBox();
-        TiposEV_PHEV1 = new javax.swing.JComboBox();
-        TiposEV_BEV1 = new javax.swing.JComboBox();
         jLabel14 = new javax.swing.JLabel();
         TiposUSR_PHEV = new javax.swing.JComboBox();
         TiposUSR_BEV = new javax.swing.JComboBox();
-        TiposEV_BEV = new javax.swing.JComboBox();
         jLabel20 = new javax.swing.JLabel();
+        TiposEV_PHEV1 = new javax.swing.JComboBox();
+        TiposEV_BEV1 = new javax.swing.JComboBox();
+        TiposEV_BEV = new javax.swing.JComboBox();
+        TiposEV_PHEV = new javax.swing.JComboBox();
         jSeparator1 = new javax.swing.JSeparator();
         jTextField1_anioSimular = new javax.swing.JTextField();
         jSlider3_anioSimulacion = new javax.swing.JSlider();
@@ -234,8 +234,6 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
 
         jPanel10.setBackground(new java.awt.Color(255, 255, 255));
 
-        TiposEV_PHEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Toyota", "Chevi" }));
-
         jLabel10.setText("PHEV");
 
         jLabel11.setText("BEV");
@@ -252,45 +250,46 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
 
         Cantidad_BEV1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "0" }));
 
-        TiposEV_PHEV1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Toyota", "Chevi" }));
-
-        TiposEV_BEV1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nissan", "Renault" }));
-
         jLabel14.setText("TIPOS DE USUARIO");
 
         TiposUSR_PHEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Trabajador Normal", "Trabajador 12 horas", "Ama de  Casa", "Trabajador2 Jornadas", "Trabajador de  Noche" }));
 
         TiposUSR_BEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Trabajador Normal", "Trabajador 12 horas", "Ama de  Casa", "Trabajador2 Jornadas", "Trabajador de  Noche" }));
 
-        TiposEV_BEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nissan", "Renault" }));
+        TiposEV_PHEV1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Chevrolet" }));
+
+        TiposEV_BEV1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Nissan", "Renault" }));
+
+        TiposEV_BEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Renault" }));
         TiposEV_BEV.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TiposEV_BEVActionPerformed(evt);
             }
         });
 
+        TiposEV_PHEV.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Toyota" }));
+
         javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
         jPanel10.setLayout(jPanel10Layout);
         jPanel10Layout.setHorizontalGroup(
             jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel10Layout.createSequentialGroup()
+                .addGap(28, 28, 28)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel10Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel13)
-                        .addGap(69, 69, 69))
+                    .addComponent(jLabel10)
+                    .addComponent(jLabel11))
+                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel10Layout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel10)
-                            .addComponent(jLabel11))
+                        .addGap(30, 30, 30)
+                        .addComponent(jLabel13))
+                    .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(TiposEV_PHEV1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(TiposEV_BEV1, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(TiposEV_BEV, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(TiposEV_PHEV, javax.swing.GroupLayout.Alignment.TRAILING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(52, 52, 52)))
+                            .addComponent(TiposEV_PHEV, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(52, 52, 52)
                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGap(17, 17, 17)
@@ -330,26 +329,28 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
                             .addComponent(jLabel18)
                             .addComponent(jLabel14))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(TiposEV_PHEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel10)
-                            .addComponent(Cantidad_PHEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(TiposEV_PHEV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(Cantidad_PHEV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel11)
                             .addGroup(jPanel10Layout.createSequentialGroup()
                                 .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(TiposEV_BEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(Cantidad_BEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jLabel10)
+                                    .addComponent(Cantidad_PHEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(TiposEV_BEV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(Cantidad_PHEV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel11)
+                                    .addComponent(Cantidad_BEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(jPanel10Layout.createSequentialGroup()
+                                        .addGap(28, 28, 28)
+                                        .addComponent(Cantidad_BEV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                             .addGroup(jPanel10Layout.createSequentialGroup()
-                                .addGap(28, 28, 28)
-                                .addComponent(Cantidad_BEV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(TiposEV_PHEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TiposEV_PHEV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TiposEV_BEV, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(TiposEV_BEV1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap())
                     .addGroup(jPanel10Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
@@ -658,7 +659,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(51, Short.MAX_VALUE))
+                .addContainerGap(199, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -669,7 +670,7 @@ public class Panel_Principal_1 extends javax.swing.JFrame {
         );
 
         java.awt.Dimension screenSize = java.awt.Toolkit.getDefaultToolkit().getScreenSize();
-        setBounds((screenSize.width-969)/2, (screenSize.height-713)/2, 969, 713);
+        setBounds((screenSize.width-1127)/2, (screenSize.height-713)/2, 1127, 713);
     }// </editor-fold>//GEN-END:initComponents
 
     private void ImpactoCurvaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ImpactoCurvaActionPerformed

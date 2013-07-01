@@ -155,7 +155,7 @@ for j=2:length(evs(:,1))
     %end
 end
  
-%[consumoenergiadia, tiempocarga,horarecarveh]=curvacarga(usuario1,vehiculos,tipotec,energiabateria);
+[consumoenergiadia, tiempocarga,horarecarveh]=curvacarga(usuario1,vehiculos,tipotec,energiabateria);
 
 
 probfinalveh1(1,1)=(prob(2,1)/sum(prob));

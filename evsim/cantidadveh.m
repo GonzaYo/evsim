@@ -1,3 +1,3 @@
 clc;
 clear;
-probabilidad(2033)
+probabilidad()
